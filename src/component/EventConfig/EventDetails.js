@@ -9,14 +9,9 @@ const layout = {
     span: 16,
   },
 };
-const validateMessages = {
-  required: '${label} is required!',
-  types: {
-    email: '${label} is not validate email!',
-   
-  },
+
   
-};
+
 
 const Demo = () => {
   const onFinish = values => {
@@ -24,7 +19,7 @@ const Demo = () => {
   };
 
   return (
-    <Form style={{width:'600px'}}  {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
+    <Form style={{width:'600px'}}  {...layout} name="nest-messages" onFinish={onFinish}>
     <Form.Item
     name={['user', 'name']}
     label="Event Title"
@@ -95,7 +90,7 @@ const EventDetail = () =>{
         <div >
         <div>
            
-           <h3>Enter Event Details</h3> 
+           <h4 style={{marginLeft:'200px', paddingTop:'20px'}}>Enter Event Details</h4> 
            <Demo/>
            </div>
         </div>

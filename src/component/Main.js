@@ -1,13 +1,11 @@
 import React from 'react';
-import Event from './Event';
+ import Event from './Event';
 import { Layout, Avatar, Menu, Breadcrumb  } from 'antd';
-import { UserOutlined, MailOutlined, GlobalOutlined,  LaptopOutlined, TrophyOutlined, ProfileOutlined, EnvironmentOutlined } from '@ant-design/icons';
+import { UserOutlined, SettingOutlined, FileOutlined, NotificationOutlined, ContactsOutlined , CarryOutOutlined , TeamOutlined, MessageOutlined } from '@ant-design/icons';
 import Title from 'antd/lib/typography/Title';
 import Search from 'antd/lib/input/Search';
 import SubMenu from 'antd/lib/menu/SubMenu';
-
-
-
+import ThemeMenu from './EventBranding/ThemeMenu';
 const { Header, Footer, Sider, Content } = Layout;
 const Main = () =>{
     return(
@@ -23,6 +21,7 @@ const Main = () =>{
                  defaultSelectedKeys={['Current Event']}
                   mode="inline"
                 >
+                  
                 <SubMenu
                      title={
                        <span>Current Event</span>
@@ -35,20 +34,105 @@ const Main = () =>{
                    <SubMenu
                     title={
                         <span>
-                          <MailOutlined />
-                          <span>Events Config</span>
+                          <SettingOutlined />
+                          <span>Setup</span>
                         </span>
                       }
                     >
                         <Menu.ItemGroup key="Event">
-                            <Menu.Item key="eventdetails"  icon={<GlobalOutlined style={{fontSize:'18pt'}} />}>Event Details</Menu.Item>
-                            <Menu.Item key="setup locations" icon={<EnvironmentOutlined style={{fontSize:'18pt'}}/>}>Setup Locations</Menu.Item>
-                            <Menu.Item key="organizer details" icon= {<LaptopOutlined style={{fontSize:'18pt'}}/>}>Organizer Details</Menu.Item>
-                            <Menu.Item key="event access settings" icon= {<TrophyOutlined style={{fontSize:'18pt'}}/>}>Event Access Setting</Menu.Item>
-                            <Menu.Item key="event social features" icon= {<ProfileOutlined style={{fontSize:'18pt'}}/>}>Event Social Features</Menu.Item>                          
+                            <Menu.Item key="eventdetails" >Event Details</Menu.Item>
+                            <Menu.Item key="setup locations" >Setup Locations</Menu.Item>
+                            <Menu.Item key="organizer details" >Organizer Details</Menu.Item>
+                            <Menu.Item key="event access settings" >Event Access Setting</Menu.Item>
+                            <Menu.Item key="event social features" >Event Social Features</Menu.Item>
+                            <Menu.Item key="Branding" >Branding</Menu.Item>
+                            <Menu.Item key="Menu Items" >Menu Items</Menu.Item>
                         </Menu.ItemGroup>
                     </SubMenu>
-                </Menu>
+                    
+                    <SubMenu
+                    title={
+                        <span>
+                          <FileOutlined />
+                          <span>Files & Resources</span>
+                        </span>
+                      }
+                    >
+                    </SubMenu>
+                    <SubMenu
+                    title={
+                        <span>
+                          <NotificationOutlined />
+                          <span>Speakers</span>
+                        </span>
+                      }
+                      >
+                    </SubMenu>
+                    <SubMenu
+                    title={
+                        <span>
+                          <ContactsOutlined />
+                          <span>Sessions</span>
+                        </span>
+                      }
+                      >
+                    </SubMenu>
+                    <SubMenu
+                    title={
+                        <span>
+                          <CarryOutOutlined />
+                          <span>Attendees</span>
+                        </span>
+                      }
+                      >
+                    </SubMenu>
+                    <SubMenu
+                    title={
+                        <span>
+                          <TeamOutlined />
+                          <span>Sponsors</span>
+                        </span>
+                      }
+                      >
+                    </SubMenu>
+
+                    <SubMenu
+                    title={
+                        <span>
+                          <MessageOutlined />
+                          <span>Communication</span>
+                        </span>
+                      }
+                    >
+                        <Menu.ItemGroup key="Communication">
+                            <Menu.Item key="announcements" >Announcements</Menu.Item>
+                            <Menu.Item key="notifications" >Notifications</Menu.Item>
+                            <Menu.Item key="feed" >Feed</Menu.Item>
+                        </Menu.ItemGroup>
+                    </SubMenu>
+
+                    <SubMenu
+                    title={
+                        <span>
+                          <SettingOutlined />
+                          <span>Settings</span>
+                        </span>
+                      }
+                    >
+                        <Menu.ItemGroup key="Settings">
+                            <Menu.Item key="Sessiontypes" >Session Types</Menu.Item>
+                            <Menu.Item key="sessiontracks" >Session Tracks</Menu.Item>
+                            <Menu.Item key="sessionlevels" >Session Levels</Menu.Item>
+                            <Menu.Item key="sponsortypes" >Sponsor Types</Menu.Item>
+                            <Menu.Item key="floorplans" >Floor Plans</Menu.Item>
+                            <Menu.Item key="pages" >Pages</Menu.Item>
+                        </Menu.ItemGroup>
+                    </SubMenu>
+
+
+                    
+
+                    </Menu>
                 </Sider>
                  <Layout>
                     <Content style={{ padding: '0 50px', margin:'24px 16px 0' }}>
@@ -64,7 +148,8 @@ const Main = () =>{
                             style={{ width: 300, margin:'20', padding:'10px', float:'right', marginTop:'10px' }}
                             />
                              <p style={{fontSize:'15px', fontWeight:'200', color:'black'}}>Showing 1 to 10 of 15 entries</p>
-                             <Event/>
+                              {/* <Event/>  */}
+                            <ThemeMenu></ThemeMenu>
                         </div>
                      </Content>
                     <Footer style={{ textAlign: 'center' }}>Copyright © 2020 eventRAFT All rights reserved.</Footer>
