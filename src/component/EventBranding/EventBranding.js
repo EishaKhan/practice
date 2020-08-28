@@ -1,6 +1,7 @@
 import React from 'react';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Input } from 'antd';
 import UploadImage from './UploadImage';
+ import ColorPicker from './ColorPicker';
 
 function EventBranding(props) {
     return (
@@ -35,9 +36,12 @@ function EventBranding(props) {
             </Row>
             <h3>Event Color</h3>
             <Row>
-               <Col span={24}>
-                   COLOR CODE PICKER
+            <Col span={1}></Col>
+               <Col span={11}>
+                 
+                    <ColorPicker/> 
                </Col>
+               <Col span={12}></Col>
             </Row>
             <hr />
             <Row>

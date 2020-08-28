@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col, Input, Checkbox } from 'antd';
-import {WechatOutlined, ScheduleOutlined, TeamOutlined, EnvironmentOutlined, HeatMapOutlined, ShareAltOutlined, MediumOutlined, QrcodeOutlined, InfoCircleOutlined, SoundOutlined, TwitterOutlined, FileOutlined, GlobalOutlined, HomeOutlined} from '@ant-design/icons';
+import {WechatOutlined, ScheduleOutlined, TeamOutlined, EnvironmentOutlined, HeatMapOutlined, ShareAltOutlined, MediumOutlined, QrcodeOutlined, InfoCircleOutlined, SoundOutlined, TwitterOutlined, FileOutlined, GlobalOutlined, HomeOutlined, SettingOutlined} from '@ant-design/icons';
+import ColorPicker from './ColorPicker';
+
 
 function onChange(e) {
     console.log(`checked = ${e.target.checked}`);
@@ -32,23 +34,21 @@ const ThemeMenu = ()=>{
                 <WechatOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" value="Chat" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
-                <Col span={7}>
-                <Input placeholder="Event Menu Label" />
+                <Col span={7} >
+                <ColorPicker/>
                 </Col>
-                <Col span={1}>
-
-                </Col>
+                <Col span={1}></Col>
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
-            <Row >
+            <Row  >
                 <Col span={1}></Col>
                 <Col span={1}>
                 <Checkbox onChange={onChange} ></Checkbox>
@@ -57,20 +57,20 @@ const ThemeMenu = ()=>{
                     <ScheduleOutlined></ScheduleOutlined>
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -83,19 +83,19 @@ const ThemeMenu = ()=>{
                 <TeamOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -108,20 +108,20 @@ const ThemeMenu = ()=>{
                 <HeatMapOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -134,18 +134,18 @@ const ThemeMenu = ()=>{
                 <EnvironmentOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}></Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -158,19 +158,19 @@ const ThemeMenu = ()=>{
                 <ShareAltOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label" />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -183,20 +183,20 @@ const ThemeMenu = ()=>{
                 <MediumOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -209,19 +209,19 @@ const ThemeMenu = ()=>{
                 <QrcodeOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -234,20 +234,20 @@ const ThemeMenu = ()=>{
                 <InfoCircleOutlined />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -260,18 +260,18 @@ const ThemeMenu = ()=>{
                 <SoundOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}></Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -284,20 +284,20 @@ const ThemeMenu = ()=>{
                 <TwitterOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -310,19 +310,19 @@ const ThemeMenu = ()=>{
                 <FileOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}} />
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -335,20 +335,20 @@ const ThemeMenu = ()=>{
                 <GlobalOutlined />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label"  style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq"  style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -361,18 +361,18 @@ const ThemeMenu = ()=>{
                 <HomeOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label"  />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}></Col>
                 
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
@@ -382,22 +382,22 @@ const ThemeMenu = ()=>{
                 <Checkbox onChange={onChange} ></Checkbox>
                 </Col>
                 <Col  span={2} style={{fontSize:'18pt',color:'#b269db'}}>
-                <WechatOutlined  />
+                <SettingOutlined  />
                 </Col>
                 <Col span={4}>
-                <Input placeholder="Event Menu Label" />
+                <Input placeholder="Event Menu Label" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}>
                 
                 </Col>
                 <Col span={7}>
-                <Input placeholder="Event Menu Label" />
+                <ColorPicker/>
                 </Col>
                 <Col span={1}>
 
                 </Col>
                 <Col span={4}>
-                <Input type='text' placeholder="Seq"/>
+                <Input type='text' placeholder="Seq" style={{border: '1px solid grey'}}/>
                 </Col>
                 <Col span={2}></Col>
             </Row>
